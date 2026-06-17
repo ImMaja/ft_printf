@@ -36,12 +36,6 @@ int	print_hexa(unsigned int dec, int upper)
 	len = 0;
 	if (dec == 0)
 		return (ft_putchar('0'));
-	if (dec < 0)
-	{
-		ft_putchar('-');
-		dec = dec * -1;
-		len += 1;
-	}
 	len += count_chars(dec, 16);
 	print_positive_base(dec, h, 16);
 	return (len);
